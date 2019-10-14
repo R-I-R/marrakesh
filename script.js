@@ -43,7 +43,7 @@ function jugar(){
     tablero = [];
     pivote = [3,3];
     nturno = 0;
-    turnoHTML.innerText = '';
+    dado.innerText = '';
 
     for(a = 0; a < size; a++){
         let tem = [];
@@ -145,6 +145,8 @@ function mover(pPivotes,piv){
         Ppintados.push(tablero[x][y]);
         tablero[x][y].onclick = ()=>pintar(x,y);
     }
+
+    if(Ppintados.length == 0) changeTurno();
 }
 
 function pasar(){
