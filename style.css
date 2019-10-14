@@ -1,0 +1,69 @@
+#tablero{
+    width: 154px;
+    height: 154px;
+    display: block;
+    background-color: whitesmoke;
+
+}
+
+.fila{
+    display: inline-block;
+}
+
+.casilla{
+    width: 20px;
+    height: 20px;
+    border: solid black 1px;
+    color: transparent;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+
+#dado h1{
+    height: 30px;
+    width: 30px;
+    background-color: burlywood;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.oculto{
+    display: none !important;
+}
+
+.red{
+    background-color: red !important;
+}
+
+.blue{
+    background-color: rgb(129, 129, 235) !important;
+}
+
+.Tred{
+    color: red !important;
+}
+
+.Tblue{
+    color: rgb(129, 129, 235) !important;
+}
+
+.pivote{
+    color: black !important;
+}
+
+.Ppivote{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.Pred{
+    background-color: rgba(255, 0, 0, 0.5) !important;
+}
+
+.Pblue{
+    background-color: rgba(129, 129, 235, 0.5) !important;
+}
+
+.black{
+    background-color: black !important;
+}
