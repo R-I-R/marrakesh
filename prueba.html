@@ -12,23 +12,18 @@
     <div id="gameplay"></div>
     <script src="./marrakesh.js"></script>
     <script>
-        let data = {
-            ajugar:-1,
-            juego:[
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            [-1,-1,-1,-1,-1,-1,-1,-1,-1],
-            ],
-            turno:['Esteban','X'],
-            gato:[-1,-1,-1,-1,-1,-1,-1,-1,-1]
-        };
-        gameStart({data:data});
+        var username = 'player1';
+        let gameinfo = {
+            'turno': 0,
+            'dineros': [16,16],
+            'nombres': ['player1','player2'],
+            'colores': ['rgba(255,0,0,1)','rgba(0,0,255,1)'],
+            'coloresP': ['rgba(255,0,0,.5)','rgba(0,0,255,.5)'],
+            'jugando': 0,
+            'pivote': [3,3],
+            'fase': 0,
+        }
+        gameStart({data:gameinfo});
     </script>
 </body>
 </html>
