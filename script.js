@@ -124,7 +124,10 @@ function mover(pPivotes,piv){
             grafo.push(tem);
         }
 
-        players[turno].innerText -= DFS(grafo,pivote[0],pivote[1],(turno?0:1))/2;
+        let bloques = DFS(grafo,pivote[0],pivote[1],(turno?0:1))/2;
+
+        players[turno].innerText -= bloques;
+        players[(turno?0:1)].innerText = Number(players[(turno?0:1)].innerText)+bloques;
         if(players[turno].innerText <= 0) endGame();
         else changeTurno();
         return;
