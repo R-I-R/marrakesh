@@ -210,3 +210,4 @@ function endGame(){
     document.getElementById('victoria').className = 'T'+Colores[turno];
     document.getElementById('victoria').innerText = `Ha ganado el jugador ${turno+1}`;
 }
+
